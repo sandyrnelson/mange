@@ -3,16 +3,16 @@
 import { veganRecipes } from '../utils/data/testData.js';
 
 function UseRecipes() {
-  //TODO: API CALLS ARE LIMITED, WHILE DEVELOP USE MOCK DATA 
+	//TODO: API CALLS ARE LIMITED, WHILE DEVELOP USE MOCK DATA
 	// const ENDPOINT =
-	// 	'https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=vegan';
+	// 	`${process.env.TASTY_API}?from=0&size=20&tags=vegan`;
 
 	// const fetcher = (...args) => {
 	// 	const options = {
 	// 		method: 'GET',
 	// 		headers: {
-	// 			'x-rapidapi-key': '3ce9f6ab4amsh575ae871bc810d0p14cce5jsna5389cf59b09',
-	// 			'x-rapidapi-host': 'tasty.p.rapidapi.com',
+	// 			'x-rapidapi-key': `${process.env.API_HOST_KEY}`,
+	// 			'x-rapidapi-host': `${process.env.API_HOST}`,
 	// 		},
 	// 	};
 	// 	return fetch(...args, options).then((res) => res.json());
