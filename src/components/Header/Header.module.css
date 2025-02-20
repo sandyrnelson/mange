@@ -1,0 +1,9 @@
+.header {
+	display: flex;
+	outline: 2px solid black;
+}
+
+.header li {
+	padding: 10px;
+	list-style-type: none;
+}

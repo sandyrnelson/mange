@@ -1,0 +1,9 @@
+.sidebar {
+	max-width: 250px;
+	border: 2px solid red;
+}
+
+.sidebar li {
+	padding: 10px;
+	list-style-type: none;
+}
