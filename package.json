@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "@radix-ui/themes": "^3.2.0",
+    "axios": "^1.7.9",
     "motion": "^12.4.4",
     "new-component": "5.0.2",
     "next": "15.1.7",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "swr": "^2.3.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
