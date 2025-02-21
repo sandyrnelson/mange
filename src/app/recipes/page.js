@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import UseRecipes from '../../hooks/UseRecipes';
-import Recipe from '../../components/Recipe/Recipe';
+import RecipeCard from '../../components/RecipeCard/RecipeCard';
 
 function Recipes() {
 	const { data, isLoading, error } = UseRecipes();
@@ -11,9 +11,9 @@ function Recipes() {
 	if (!data || data.length === 0) return <div>No recipes found.</div>;
 
 	return (
-		<div>
+		<div style={{ display: 'flex', flexWrap: 'wrap' }}>
 			{data.map((recipe) => (
-				<Recipe recipe={recipe} key={recipe.id} />
+				<RecipeCard recipe={recipe} key={recipe.id} />
 			))}
 		</div>
 	);
