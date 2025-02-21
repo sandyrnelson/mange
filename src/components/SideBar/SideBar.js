@@ -4,6 +4,7 @@ import Calendar from '../Calendar/Calendar';
 import DinnerPicker from '../DinnerPicker/DinnerPicker';
 import Header from '../Header/Header';
 import styles from './SideBar.module.css';
+import Link from 'next/link';
 
 function SideBar() {
 	return (
@@ -15,6 +16,9 @@ function SideBar() {
 
 				<li>
 					<SearchBar />
+				</li>
+				<li>
+					<Link href='/recipes'>Recipes</Link>
 				</li>
 				<li>new addition</li>
 				<li>
