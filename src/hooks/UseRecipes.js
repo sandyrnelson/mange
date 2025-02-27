@@ -5,7 +5,7 @@ import { veganRecipes } from '../utils/data/testData.js';
 function UseRecipes() {
 	//TODO: API CALLS ARE LIMITED, WHILE DEVELOP USE MOCK DATA
 	// const ENDPOINT =
-	// 	`${process.env.TASTY_API}?from=0&size=20&tags=vegan`;
+	// 	`${process.env.NEXT_PUBLIC_TASTY_API}/recipes/list?from=0&size=20&tags=vegan`;
 
 	// const fetcher = (...args) => {
 	// 	const options = {
