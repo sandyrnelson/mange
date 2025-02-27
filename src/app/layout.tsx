@@ -5,6 +5,7 @@ import '@radix-ui/themes/styles.css';
 import { Theme } from '@radix-ui/themes';
 import SideBar from '../components/SideBar';
 import Wrapper from '../ui/Wrapper';
+import UserContextWrapper from '../contexts/UserContext';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -29,12 +30,14 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${geistSans.variable} ${geistMono.variable}`}>
-				<Theme>
-					<Wrapper>
-						<SideBar />
-						{children}
-					</Wrapper>
-				</Theme>
+				<UserContextWrapper>
+					<Theme>
+						<Wrapper>
+							<SideBar />
+							{children}
+						</Wrapper>
+					</Theme>
+				</UserContextWrapper>
 			</body>
 		</html>
 	);
