@@ -11,8 +11,8 @@ function UseRecipes() {
 	// 	const options = {
 	// 		method: 'GET',
 	// 		headers: {
-	// 			'x-rapidapi-key': `${process.env.API_HOST_KEY}`,
-	// 			'x-rapidapi-host': `${process.env.API_HOST}`,
+	// 			'x-rapidapi-key': `${process.env.NEXT_PUBLIC_API_HOST_KEY}`,
+	// 			'x-rapidapi-host': `${process.env.NEXT_PUBLIC_API_HOST}`,
 	// 		},
 	// 	};
 	// 	return fetch(...args, options).then((res) => res.json());
