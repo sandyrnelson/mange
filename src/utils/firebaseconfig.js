@@ -1,14 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app';
 import {
-	FIREBASE_API_KEY,
-	FIREBASE_AUTH_DOMAIN,
-	FIREBASE_PROJECT_ID,
-	FIREBASE_STORAGE,
-	FIREBASE_MESSAGING,
-	FIREBASE_APP_ID,
-} from '@env';
-import {
 	getAuth,
 	signInWithPopup,
 	GoogleAuthProvider,
@@ -21,16 +13,15 @@ import { doc, getDoc, setDoc, getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-	apiKey: FIREBASE_API_KEY,
-	authDomain: FIREBASE_AUTH_DOMAIN,
-	projectId: FIREBASE_PROJECT_ID,
-	storageBucket: FIREBASE_STORAGE,
-	messagingSenderId: FIREBASE_MESSAGING,
-	appId: FIREBASE_APP_ID,
+	apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+	authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+	projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+	storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE,
+	messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING,
+	appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
-
 // Initialize Firebase
-initializeApp(firebaseConfig);
+const firabaseApp = initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
 googleProvider.setCustomParameters({
