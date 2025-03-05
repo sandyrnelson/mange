@@ -20,7 +20,7 @@ function SideBar() {
 				<li>
 					<Link href='/recipes'>Recipes</Link>
 				</li>
-				<li>new addition</li>
+				<li><Link href='/new-recipe'>New Recipe</Link></li>
 				<li>
 					<Calendar />
 				</li>
