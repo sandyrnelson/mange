@@ -20,7 +20,7 @@ function UseTags() {
 
 	// const { data, isLoading, error } = useSWR(ENDPOINT, fetcher);
 
-	const data = TAGS.results;
+	const data = TAGS;
 	const isLoading = false;
 	const error = false;
 	return { data, isLoading, error };
